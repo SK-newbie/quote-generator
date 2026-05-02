@@ -1,4 +1,5 @@
-
+const quoteButton = document.querySelector('.quote-change');
+let 
 
 
 
