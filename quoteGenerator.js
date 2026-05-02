@@ -1,16 +1,9 @@
-// //      <p class="quote">
-//                 "Be who you are and say what you feel, because those who mind don't matter, and those who matter don't
-//                 mind"
-//             </p>
-//             <div class="person-quote">Dr. Seuss</div>
-//             <button class="quote-change">New Quote</button>
-
 const quoteButton = document.querySelector('.quote-change');
-let ownerOfQuote = document.querySelector('.person-quote');
-let quoteOfTheDay = document.querySelector('.quote');
-let yearOfQuote = document.querySelector('.year');
+const ownerOfQuote = document.querySelector('.person-quote');
+const quoteOfTheDay = document.querySelector('.quote');
+const yearOfQuote = document.querySelector('.year');
 
-const quoteList  = [
+let quoteList  = [
   {
     person: "Albert Einstein",
     year: 1921,
@@ -64,9 +57,9 @@ const quoteList  = [
 ];
 
 quoteButton.addEventListener('click', function(){
-  let randomQuotes = Math.floor(Math.random() * quoteList.length);
+  const randomQuotes = Math.floor(Math.random() * quoteList.length);
   quoteOfTheDay.textContent = quoteList[randomQuotes].quote;
   ownerOfQuote.textContent =quoteList[randomQuotes].person;
-  yearOfQuote.textContent = quoteList[randomQuotes].year
+  yearOfQuote.textContent = quoteList[randomQuotes].year;
 
 })
