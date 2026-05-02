@@ -1,15 +1,57 @@
 const quoteButton = document.querySelector('.quote-change');
-let 
+let quotesOfTheDay = document.querySelector('.quote');
+let ownerOfQuote = document.querySelector('.person-quote');
 
 
+const quoteList =  [
+  {
+    person: "Albert Einstein",
+    quote: "Life is like riding a bicycle. To keep your balance, you must keep moving."
+  },
+  {
+    person: "Nelson Mandela",
+    quote: "It always seems impossible until it's done."
+  },
+  {
+    person: "Steve Jobs",
+    quote: "Stay hungry, stay foolish."
+  },
+  {
+    person: "Maya Angelou",
+    quote: "You will face many defeats in life, but never let yourself be defeated."
+  },
+  {
+    person: "Confucius",
+    quote: "It does not matter how slowly you go as long as you do not stop."
+  },
+  {
+    person: "Mark Twain",
+    quote: "The secret of getting ahead is getting started."
+  },
+  {
+    person: "Eleanor Roosevelt",
+    quote: "Do one thing every day that scares you."
+  },
+  {
+    person: "Bruce Lee",
+    quote: "Be yourself; everyone else is already taken."
+  },
+  {
+    person: "Winston Churchill",
+    quote: "Success is not final, failure is not fatal: it is the courage to continue that counts."
+  },
+  {
+    person: "Lao Tzu",
+    quote: "A journey of a thousand miles begins with a single step."
+  }
+];
 
+quoteButton.addEventListener('click', function(){
+  let randomQuote = Math.floor(Math.random() * quoteList.length);
 
-
-
-
-
-
-
+  quotesOfTheDay.innerText = quoteList[randomQuote].quote;
+  ownerOfQuote.textContent = quoteList[randomQuote].person;
+})
 
 
 
