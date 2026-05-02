@@ -1,9 +1,14 @@
+/*Variables*/
+
 const quoteButton = document.querySelector('.quote-change');
 const ownerOfQuote = document.querySelector('.person-quote');
 const quoteOfTheDay = document.querySelector('.quote');
 const yearOfQuote = document.querySelector('.year');
 
-let quoteList  = [
+
+/*Array Of Quotes*/
+
+let quoteList = [
   {
     person: "Albert Einstein",
     year: 1921,
@@ -56,10 +61,11 @@ let quoteList  = [
   }
 ];
 
-quoteButton.addEventListener('click', function(){
-  const randomQuotes = Math.floor(Math.random() * quoteList.length);
-  quoteOfTheDay.textContent = quoteList[randomQuotes].quote;
-  ownerOfQuote.textContent =quoteList[randomQuotes].person;
-  yearOfQuote.textContent = quoteList[randomQuotes].year;
 
+/*Event*/
+quoteButton.addEventListener('click', function(){
+  let randomQuotes = Math.floor(Math.random() * quoteList.length);
+  quoteOfTheDay.textContent = quoteList[randomQuotes].quote;
+  ownerOfQuote.textContent = quoteList[randomQuotes].person;
+  yearOfQuote.textContent = quoteList[randomQuotes].year;
 })
