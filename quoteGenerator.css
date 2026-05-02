@@ -7,6 +7,8 @@
 body {
     background: url(./img/HE7vkaBa0AAjOno.jpg) no-repeat center/ cover;
     height: 100vh;
+    font-family: sans-serif;
+    font-size: 1.3rem;
 }
 
 .container {
@@ -31,4 +33,30 @@ h2 {
     background-color: white;
     border-radius: 10px;
     border: 2px solid black;
+    padding: 20px;
+    height: 250px;
+}
+
+.quote,
+.person-quote {
+    padding: 20px;
+}
+
+.person-quote {
+    font-weight: bold;
+}
+
+.quote-change {
+    width: 150px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.quote-change:active {
+    background-color: aqua;
 }
