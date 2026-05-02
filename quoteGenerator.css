@@ -34,11 +34,11 @@ h2 {
     border-radius: 10px;
     border: 2px solid black;
     padding: 20px;
-    height: 250px;
+    height: 350px;
 }
 
 .quote,
-.person-quote {
+.person-quote, .year {
     padding: 20px;
 }
 
