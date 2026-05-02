@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(./img/HE7vkaBa0AAjOno.jpg) no-repeat center/ cover;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    width: 45%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+h2 {
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    padding: 15px;
+    margin: 20px;
+}
+
+.main-container {
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+}
