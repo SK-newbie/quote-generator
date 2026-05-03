@@ -1,62 +1,79 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background: url(./img/HE7vkaBa0AAjOno.jpg) no-repeat center/ cover;
-    height: 100vh;
-    font-family: sans-serif;
-    font-size: 1.3rem;
+    background-image: url(./img/HE7vkaBa0AAjOno.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: monospace;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-
-    width: 45%;
-    margin: 100px auto;
+    width: 100%;
+    margin: 150px auto;
     text-align: center;
 }
 
-h2 {
+.heading {
+    font-size: 2rem;
     background-color: black;
-    border-radius: 10px;
-    border: 2px solid white;
+    width: 35%;
+    flex-wrap: wrap;
     color: white;
-    padding: 15px;
-    margin: 20px;
+    margin: 25px auto;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
-.main-container {
+.quote-container {
+
     background-color: white;
+    width: 35%;
+    margin: 35px auto;
+    border: 6px black solid;
     border-radius: 10px;
-    border: 2px solid black;
+    box-shadow: 0 0 40px black;
     padding: 20px;
     height: 350px;
 }
 
-.quote,
-.person-quote, .year {
-    padding: 20px;
-}
-
-.person-quote {
-    font-weight: bold;
-}
-
-.quote-change {
-    width: 150px;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
+#famous-quotes {
+    font-style: italic;
     margin: 20px;
+     font-size: 1.3rem;
 }
 
-.quote-change:active {
-    background-color: aqua;
+.person {
+    padding: 20px;
+    margin: 20px auto;
+    padding: 20px;
+     font-size: 1.2rem;
+}
+
+.year-of-quote {
+    margin: 20px;
+    padding: 20px;
+     font-size: 1rem;
+}
+
+.quote-generator-btn {
+    background-color: black;
+    font-family: inherit;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px white solid;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.quote-generator-btn:active {
+    background-color: lightcoral;
+    transition: .1s ease;
 }
