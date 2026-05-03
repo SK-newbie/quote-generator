@@ -46,20 +46,20 @@ body {
 #famous-quotes {
     font-style: italic;
     margin: 20px;
-     font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 
 .person {
     padding: 20px;
     margin: 20px auto;
     padding: 20px;
-     font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .year-of-quote {
     margin: 20px;
     padding: 20px;
-     font-size: 1rem;
+    font-size: 1rem;
 }
 
 .quote-generator-btn {

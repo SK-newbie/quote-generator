@@ -206,7 +206,7 @@ const famousQuotesList = [
     }
 ];
 
-quoteButton.addEventListener('click', function(){
+quoteButton.addEventListener('click', function () {
     let randomQuote = Math.floor(Math.random() * famousQuotesList.length);
     famousQuote.textContent = famousQuotesList[randomQuote].quote;
     famousQuoteAuthor.textContent = famousQuotesList[randomQuote].person;
