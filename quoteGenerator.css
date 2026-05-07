@@ -15,14 +15,17 @@ body {
 
 .container {
     width: 100%;
-    margin: 150px auto;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
     text-align: center;
 }
 
 .heading {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
     background-color: black;
-    width: 35%;
+    width: 100%;
+    max-width: 350px;
     flex-wrap: wrap;
     color: white;
     margin: 25px auto;
@@ -32,48 +35,92 @@ body {
 }
 
 .quote-container {
-
     background-color: white;
-    width: 35%;
+    width: 100%;
+    max-width: 500px;
     margin: 35px auto;
     border: 6px black solid;
     border-radius: 10px;
     box-shadow: 0 0 40px black;
     padding: 20px;
-    height: 350px;
+    min-height: 300px;
 }
 
 #famous-quotes {
     font-style: italic;
     margin: 20px;
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
 }
 
 .person {
-    padding: 20px;
+    padding: 15px;
     margin: 20px auto;
-    padding: 20px;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
 .year-of-quote {
     margin: 20px;
     padding: 20px;
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 .quote-generator-btn {
     background-color: black;
     font-family: inherit;
     color: white;
-    padding: 20px;
+    padding: 15px 30px;
     border-radius: 10px;
     border: 2px white solid;
     cursor: pointer;
     font-weight: bold;
+    font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 .quote-generator-btn:active {
     background-color: lightcoral;
     transition: .1s ease;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+    
+    .heading {
+        max-width: 100%;
+    }
+    
+    .quote-container {
+        margin: 20px auto;
+        padding: 15px;
+        min-height: 250px;
+    }
+    
+    #famous-quotes, .person, .year-of-quote {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+    
+    .heading {
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+    
+    .quote-container {
+        margin: 15px auto;
+        padding: 10px;
+        border-width: 4px;
+    }
+    
+    .quote-generator-btn {
+        padding: 12px 20px;
+    }
 }
