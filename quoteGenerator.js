@@ -292,5 +292,5 @@ quoteButton.addEventListener('click', function(){
   famousQuote.innerText = famousQuotesList[randomQuotes].quote;
   famousQuoteAuthor.textContent = famousQuotesList[randomQuotes].person;
   quoteYear.textContent = famousQuotesList[randomQuotes].year;
-  imageChange.style.backgroundImage =  `URL("$famousQuotesList[randomQuotes].image")`;
+  imageChange.style.backgroundImage =  `URL("${famousQuotesList[randomQuotes].image}")`;
 })
