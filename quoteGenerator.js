@@ -287,10 +287,10 @@ const famousQuotesList =  [
   }
 ];
 
-quoteButton.addEventListener('click', function () {
-    let randomQuote = Math.floor(Math.random() * famousQuotesList.length);
-    famousQuote.textContent = famousQuotesList[randomQuote].quote;
-    famousQuoteAuthor.textContent = famousQuotesList[randomQuote].person;
-    quoteYear.textContent = famousQuotesList[randomQuote].year
-    imageChange.style.backgroundImage = `url("${famousQuotesList[randomQuote].image}")`;
-});
+quoteButton.addEventListener('click', function(){
+  let randomQuotes = Math.floor(Math.random() * famousQuotesList.length);
+  famousQuote.innerText = famousQuotesList[randomQuotes].quote;
+  famousQuoteAuthor.textContent = famousQuotesList[randomQuotes].person;
+  quoteYear.textContent = famousQuotesList[randomQuotes].year;
+  imageChange.style.backgroundImage =  `URL("$famousQuotesList[randomQuotes].image")`;
+})
